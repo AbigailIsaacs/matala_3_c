@@ -5,19 +5,19 @@ AR = ar
 all: txtfind isort
 
 txtfind: txtfind.o
-	$(CC) -o txtfind txtfind.o
+	$(CC) $(CFLAGS) -o txtfind txtfind.o
 
 txtfind.o:txtfind.c
-	$(CC) -c txtfind.c -o txtfind.o
+	$(CC) $(CFLAGS) -c txtfind.c -o txtfind.o
 
 isort: isort.o main.o
-	$(CC) -o isort isort.o main.o
+	$(CC) $(CFLAGS) -o isort isort.o main.o
 
 main.o:main.c
-	$(CC) -c main.c -o main.o
+	$(CC) $(CFLAGS) -c main.c -o main.o
 
 isort.o: isort.c
-	$(CC) -c isort.c -o isort.o
+	$(CC) $(CFLAGS) -c isort.c -o isort.o
 
 .PHONY: clean all
 
