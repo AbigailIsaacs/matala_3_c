@@ -16,6 +16,8 @@ int main(){
 	}
 
 	printf("%d",*(arr+len-1));
+	printf("\n");
+
 
 	return 0;
 
