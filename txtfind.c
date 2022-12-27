@@ -36,7 +36,7 @@ void functionB(int len,char word[]){
 		char simler[WORD];
 		int i =0;
 		
-		while((current!= ' ')&&(current!= '\n')&&(current!= '\t')){
+		while((current!= ' ')&&(current!= '\n')&&(current!= '\t')&&(current!= '\r')){
 			simler[i++] = current;
 			scanf("%c",&current);
 		}
